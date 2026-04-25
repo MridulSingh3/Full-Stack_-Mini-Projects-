@@ -1,0 +1,265 @@
+/* 🔹 Design System */
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --danger: #ef4444;
+    --success: #22c55e;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+    --subtext: #64748b;
+    --border: #e2e8f0;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Poppins", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* 🔹 Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* 🔹 Header */
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* 🔹 Floating Button */
+.add-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+    transition: 0.3s ease;
+}
+
+.add-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+/* 🔹 Grid */
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* 🔹 Card */
+.task-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.task-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.task-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* 🔹 Priority Badge */
+.priority {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+.priority.low {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.priority.medium {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.priority.high {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+/* 🔹 Dropdown */
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #fff;
+}
+
+/* 🔹 Buttons */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.next-btn {
+    flex: 1;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.next-btn:hover {
+    background: var(--primary-dark);
+}
+
+.delete-btn {
+    flex: 1;
+    background: transparent;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: var(--danger);
+    color: white;
+}
+
+/* 🔹 Messages */
+.error,
+.success,
+.info {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.error {
+    color: var(--danger);
+}
+
+.success {
+    color: var(--success);
+}
+
+.info {
+    color: var(--subtext);
+}
+
+/* ========================= */
+/* 🔥 FORM PAGE (Professional) */
+/* ========================= */
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #eef2ff, #f8fafc);
+}
+
+.form-card {
+    width: 380px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 13px;
+    color: var(--subtext);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Buttons */
+.submit-btn {
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background: var(--primary-dark);
+}
+
+.back-btn {
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #f1f5f9;
+}
