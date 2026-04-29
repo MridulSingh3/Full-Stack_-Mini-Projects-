@@ -1,0 +1,389 @@
+/* Main Container */
+.dashboard {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Add Button */
+.add-btn {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+/* Chart */
+.chart-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+/* List */
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Card */
+.expense-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text */
+.title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.category {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Right section */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Amount */
+.amount {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Delete Button */
+.delete-btn {
+    padding: 6px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+
+/* Empty */
+.empty {
+    text-align: center;
+    color: #888;
+}
+
+/* Full Page Center */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+}
+
+/* Card */
+.login-card {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title */
+.login-title {
+    margin-bottom: 20px;
+}
+
+/* Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Inputs */
+.login-form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.login-form input:focus {
+    border-color: #4caf50;
+}
+
+/* Login Button */
+.login-btn {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Signup */
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-btn {
+    margin-top: 8px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #0d47a1;
+}
+
+/* Error */
+.error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Full Page */
+.register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1976d2, #0d47a1);
+}
+
+/* Card */
+.register-card {
+    background: white;
+    padding: 30px;
+    width: 340px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title */
+.register-title {
+    margin-bottom: 20px;
+}
+
+/* Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Inputs */
+.register-form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.register-form input:focus {
+    border-color: #1976d2;
+}
+
+/* Button */
+.register-btn {
+    padding: 10px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #0d47a1;
+}
+
+/* Login redirect */
+.login-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-btn-alt {
+    margin-top: 8px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn-alt:hover {
+    background-color: #2e7d32;
+}
+
+/* Error */
+.error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Page */
+.add-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9800, #f57c00);
+}
+
+/* Card */
+.add-card {
+    background: white;
+    padding: 30px;
+    width: 340px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form */
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Inputs */
+.add-form input,
+.add-form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.add-form input:focus,
+.add-form select:focus {
+    border-color: #ff9800;
+}
+
+/* Add Button */
+.add-btn {
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #e65100;
+}
+
+/* Back Button */
+.back-btn {
+    margin-top: 15px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #222;
+}
+
+/* Error */
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 16px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.logout-btn:hover {
+    background-color: #cc0000;
+    transform: translateY(-1px);
+}
+
+/* Optional: full width button */
+.logout-btn.full {
+    width: 100%;
+}
